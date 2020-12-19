@@ -1,9 +1,9 @@
 import PropTypes from 'prop-types';
-import s from './ErrorView.module.css';
+import s from './ErrorImg.module.css';
 
 import errorImg from '../../img/nothing-found.png';
 
-function ErrorView({ texterror }) {
+function ErrorImg({ texterror }) {
   return (
     <div role="alert" className={s.wrapper}>
       <img src={errorImg} width="400" alt="no-results" />
@@ -14,8 +14,8 @@ function ErrorView({ texterror }) {
   );
 }
 
-ErrorView.propTypes = {
+ErrorImg.propTypes = {
   texterror: PropTypes.string.isRequired,
 };
 
-export default ErrorView;
+export default ErrorImg;
