@@ -1,9 +1,8 @@
 .container {
-  margin: 30px auto;
-  padding: 30px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 16px;
 
-  width: 500px;
-  background-color: var(--bgColor);
-  border-radius: 10px;
-  box-shadow: var(--shadow-dark);
+  margin: 30px auto;
+  padding-bottom: 24px;
 }
