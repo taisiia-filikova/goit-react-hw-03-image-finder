@@ -219,3 +219,86 @@ img {
 .Button:focus {
   background-color: #303f9f;
 }
+
+/* мои стили */
+/* @import url('https://fonts.googleapis.com/css?family=Comfortaa'); */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&display=swap');
+
+:root {
+  --textColor: #212121;
+  --primaryWhiteColor: #ffffff;
+  --bgColor: #d8bfd8;
+  --darkVioletColor: #391d35;
+  --violetColor: #613d5c;
+  --shadow-dark: gray 1px 1px 10px, gray -1px -1px 10px, gray -1px 1px 10px,
+    gray 1px -1px 10px;
+  --transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  background-image: url('./img/photos.jpg');
+  /* font-family: 'Comfortaa', cursive; */
+  font-family: 'Playfair Display', serif;
+
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.33;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+button {
+  user-select: none;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+h1 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 25px;
+  color: var(--violetColor);
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 20px;
+  color: var(--violetColor);
+}
