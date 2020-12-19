@@ -34,7 +34,7 @@ class App extends Component {
     const { query, page } = this.state;
 
     if (query.trim() === '') {
-      return toast.info('😱 Please enter a value for search images!');
+      return toast.info('Please, enter a something for search images!');
     }
 
     this.toggleLoader();
@@ -46,10 +46,10 @@ class App extends Component {
         page: page + 1,
       }));
       if (request.length === 0) {
-        this.setState({ error: `No results were found for ${query}!` });
+        this.setState({ error: `Nothing were found for ${query}!` });
       }
     } catch (error) {
-      this.setState({ error: 'Something went wrong. Try again.' });
+      this.setState({ error: 'Something went wrong. Please, try again.' });
     } finally {
       this.toggleLoader();
     }
@@ -66,7 +66,7 @@ class App extends Component {
 
   onLoadMore = () => {
     this.searchImages();
-    this.scrollling();
+    this.scrolling();
   };
 
   onOpenModal = e => {
