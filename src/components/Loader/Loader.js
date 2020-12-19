@@ -7,8 +7,8 @@ function Load() {
   return (
     <div className={s.overlay}>
       <Loader
-        type="Circles"
-        color="#00BFFF"
+        type="TailSpin"
+        color="#3f51b5"
         height={80}
         width={80}
         timeout={0}
