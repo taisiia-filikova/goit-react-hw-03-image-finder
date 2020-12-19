@@ -22,7 +22,6 @@ function Searchbar({ onHandleSubmit, onSearchQueryChange, value }) {
     </header>
   );
 }
-
 // <header className="Searchbar">
 //   <form className="SearchForm">
 //     <button type="submit" className="SearchForm-button">
